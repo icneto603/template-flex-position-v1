@@ -43,5 +43,5 @@ E pronto! A página será exibida.
 ## 📁 Estrutura dos Arquivos
 
 template-flex-position-v1/
-├── index.html         # Arquivo principal da estrutura e conteúdo
-└── style.css          # Arquivo de estilos para a aparência visual
+├── index.html        
+└── style.css          
