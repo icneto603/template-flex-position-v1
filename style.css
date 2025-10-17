@@ -1,0 +1,195 @@
+/* --- Reset Padrão --- */
+/* Isso remove margens e preenchimentos padrão do navegador e ajusta o cálculo de tamanho das caixas. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilo Geral do Corpo da Página --- */
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #ecf0f1; /* Cor de fundo principal (cinza claro) */
+    color: #bbb7b7; /* Cor padrão do texto */
+}
+
+/* --- Estilos do Cabeçalho --- */
+.header {
+    background-color: #8a8a8a; /* Cor de fundo do header (cinza escuro) */
+    padding: 15px 0;
+    position: fixed; /* Deixa o header fixo no topo */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Garante que o header fique na frente de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.header-container {
+    display: flex; /* Ativa o Flexbox para alinhar os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+}
+
+.nav-button {
+    color: white;
+    background-color: #a3a3a3; /* Cor de destaque (vermelho) */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px; /* Espaçamento entre os botões */
+    border-radius: 8px; /* Cantos arredondados */
+    font-weight: bold; /* Fonte em negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Efeito de transição suave */
+}
+
+/* Efeito hover para os botões de navegação */
+.nav-button:hover {
+    background-color: #3b3b3b; /* Um tom de mais escuro */
+    transform: translateY(-2px); /* Move o botão um pouco para cima */
+}
+
+/* --- Estilos do Conteúdo Principal --- */
+.main-content {
+    /* Adicionamos um padding no topo e no rodapé para que o conteúdo não fique escondido atrás do header e footer fixos. */
+    padding-top: 80px; 
+    padding-bottom: 80px;
+    width: 90vw; /* Ocupa 90% da largura da tela */
+    max-width: 1200px; /* Limita a largura máxima em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo principal na página */
+}
+
+.intro-container {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000000; /* Borda com a cor de destaque */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    margin-bottom: 20px;
+}
+
+.intro-container h1 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+    font-weight: 700; /* Peso da fonte (mais grosso) */
+}
+
+.intro-container p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Espaçamento entre as linhas para melhor legibilidade */
+    color: #555;
+}
+
+/* --- Estilos da Seção de Cards --- */
+.cards-container {
+    display: flex; /* Ativa o Flexbox para alinhar os cards */
+    justify-content: space-around; /* Distribui os cards com espaço igual ao redor */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo em telas menores */
+    gap: 20px; /* Espaço entre os cards */
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para o efeito hover */
+}
+
+/* Efeito hover para os cards */
+.card:hover {
+    transform: translateY(-10px); /* Levanta o card ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px; /* Cantos arredondados para a imagem */
+}
+
+.card figcaption {
+    font-size: 1.3em;
+    font-weight: bold; /* Destaque para o título do card */
+    margin: 15px 0 10px;
+}
+
+.card p {
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #c9c9c9; /* Cor dos botões do card*/
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover para o botão do card */
+.card-button:hover {
+    background-color: #6b6b6b; /* Cor quando passar o mouse*/
+}
+
+/* --- Estilos da Lista --- */
+.list-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-list {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    display: inline-block; /* Permite centralizar a lista baseada no texto */
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    margin-top: 20px;
+}
+
+.info-list li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #000000; /* Destaque na lateral com cor */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+/* --- Estilos do Rodapé --- */
+.footer {
+    background-color: #b3b3b3; /* Mesma cor do header */
+    padding: 15px 0;
+    position: fixed; /* Deixa o rodapé fixo na base */
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px; /* Espaçamento entre os ícones */
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Efeito hover para os ícones sociais */
+.social-icon:hover img {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do ícone */
+}
