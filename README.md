@@ -41,3 +41,7 @@ Por ser um projeto puramente front-end (HTML e CSS), não há necessidade de ins
 E pronto! A página será exibida.
 
 ## 📁 Estrutura dos Arquivos
+
+template-flex-position-v1/
+├── index.html         # Arquivo principal da estrutura e conteúdo
+└── style.css          # Arquivo de estilos para a aparência visual
